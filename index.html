@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info-subtle" id="body">
+    <div class="switchBtn">
+      <input
+        type="checkbox"
+        class="btn-check"
+        id="btn-check-2"
+        autocomplete="off"
+      />
+      <label class="btn btn-dark" for="btn-check-2" id="btn-check-2-label"
+        >Dark Mode</label
+      >
+    </div>
+    <div class="container-fluid">
+      <h1 class="heading" id="heading">Welcome to Calculator</h1>
+      <div class="calc border border-secondary-subtle" id="calc">
+        <div class="display">
+          <div class="display-text">
+            <input
+              type="text"
+              name="input"
+              id="input"
+              placeholder="0"
+              disabled
+            />
+          </div>
+          <div class="display-text">
+            <input type="text" name="output" id="output" disabled />
+          </div>
+        </div>
+        <div class="keypad" id="keypad">
+          <div>
+            <button class="keys">AC</button>
+            <button class="keys">DEL</button>
+            <button class="keys operator" id="perc">%</button>
+            <button class="keys operator">/</button>
+          </div>
+          <div>
+            <button class="keys">7</button>
+            <button class="keys">8</button>
+            <button class="keys">9</button>
+            <button class="keys operator">*</button>
+          </div>
+          <div>
+            <button class="keys">4</button>
+            <button class="keys">5</button>
+            <button class="keys">6</button>
+            <button class="keys operator">-</button>
+          </div>
+          <div>
+            <button class="keys">1</button>
+            <button class="keys">2</button>
+            <button class="keys">3</button>
+            <button class="keys operator">+</button>
+          </div>
+          <div>
+            <button class="keys">()</button>
+            <button class="keys">0</button>
+            <button class="keys">.</button>
+            <button class="keys" id="equalTo">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

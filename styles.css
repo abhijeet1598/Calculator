@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 1.6rem;
+  color: #495057;
+}
+
+.calc {
+  /* background-color: aqua; */
+  margin: 3rem auto;
+  /* border: 1px solid #dee2e6; */
+  border-radius: 0.5rem;
+  width: 18rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: #f1f3f5;
+  padding: 1.8rem 1.2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  align-items: center;
+}
+
+.keys {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 0.9rem;
+  background-color: #dee2e6;
+  border: none;
+}
+
+.keys:hover {
+  background-color: #ced4da;
+}
+
+.display {
+  width: 100%;
+}
+
+.display-text input {
+  width: 100%;
+  border: none;
+  height: 4rem;
+  padding: 1.6rem;
+  font-size: 2.4rem;
+  text-align: end;
+  background-color: #fff;
+  color: #555;
+}
+
+#input {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  text-overflow: ellipsis;
+}
+
+#output {
+  font-size: 3.6rem;
+}
+
+#equalTo {
+  background-color: #339af0 !important;
+}
+
+#equalTo:hover {
+  background-color: #1c7ed6 !important;
+}
+
+.operator {
+  color: #339af0 !important;
+  font-weight: 700;
+}
+
+.switchBtn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
